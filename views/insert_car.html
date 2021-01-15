@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>insert car</title>
+    </head>
+    <body>
+        <form action="http://localhost:3001/cars/" method="POST">
+            <!-- 고유번호 -->
+            <label for="vin">vin</label>
+            <input type="text" id="vin" name="vin"/>
+            <br>
+            <!-- 번호판 -->
+            <label for="lisence_plate">lisence_plate</label>
+            <input type="text" id="lisence_plate" name="lisence_num"/>
+            <br>
+            <!-- 모델 -->
+            <label for="model">model</label>
+            <input type="text" id="model" name="model"/>
+            <br>
+            <!-- 위치 -->
+            <label for="location">location</label>
+            <input type="text" id="location" name="location"/>
+            <br>
+            <!-- 주행거리 -->
+            <label for="mile">mile</label>
+            <input type="" id="mile" name="mile" min="0" max="99999999"/>
+            <br>
+            <!-- 엔진오일 -->
+            <label for="engine_oil">engine_oil</label>
+            <input type="date" id="engine_oil" name="engine_oil"/>
+            <br>
+            <!-- 타입 -->
+            <label for="type">type</label>
+            <select id="classification" name="classification">
+                    <option value="" disabled>Type of Car</option>
+                    <option value="light">light</option>
+                    <option value="small">small</option>
+                    <option value="mid">mid</option>
+                    <option value="large">large</option>
+                    <option value="van">van</option>
+                    <option value="suv">suv</option>
+                    <option value="foreign">foreign</option>
+            </select>
+            <br>
+            <!-- 소유 회사 -->
+            <label for="company_id">company_id</label>
+            <input type="number" id="company_id" name="company_id" value ="1" readonly/>
+            <br>
+            <input type="submit" value="등록"/> 
+        </form>
+    </body>
+</html>
